@@ -9,11 +9,11 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class  StoreApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(StoreApplication.class, args);
-        var orderService = context.getBean(OrderService.class);
-//        orderService.setPaymentService(new PayPalPaymentService());
-        orderService.placeOrder();
-        context.close();
+        ApplicationContext context = SpringApplication.run(StoreApplication.class, args);
+//        var orderService = context.getBean(OrderService.class);
+////        orderService.setPaymentService(new PayPalPaymentService());
+//        orderService.placeOrder();
+//        context.close();
     }
 
 }

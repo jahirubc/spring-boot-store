@@ -1,9 +1,15 @@
 spring:
   application:
     name: store
-stripe:
-  apiUrl: https://api.stripe.com
-  timeout: 100
-  enabled: true
-  supported-currencies: USD,EUR,GBP
+  datasource:
+    url: jdbc:mysql://localhost:3306/store?createDatabaseIfNotExist=true
+    username: root
+    password: root
+
+  stripe:
+    apiUrl: https://api.stripe.com
+    timeout: 100
+    enabled: true
+    supported-currencies: USD,EUR,GBP
+
 payment-gateway: paypal
